@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://img.freepik.com/premium-vector/blue-comic-pop-art-burst-background_530597-453.jpg");
+    background-repeat:round;
+    background-size:cover;
+    font-family: 'Caveat', cursive;
+
+}
+h1 {
+    text-align: center;
+    color: rgb(236, 220, 198);
+    font-size: 52px;
+}
+#heroContainer {
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.hero {
+    width: 370px;
+    height: 600px;
+    border: 1px solid rgb(216, 214, 210);
+    padding: 11px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(225, 233, 238);
+    margin: 6px;
+    opacity: 85%;
+    font-family: 'Caveat', cursive;
+    font-size:larger;
+
+    
+
+}
+.avatar {
+    width: 300px;
+    height: 300px;
+}
+.rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+.rating__item {
+    color: azure;
+    font-size: 35px;
+    cursor: pointer;
+    transition : .2s ;
+}
+.rating__item:hover,
+.rating__item:hover ~ .rating__item {
+    color: aquamarine;
+}
+.rating[data-total-value='1'] .rating__item:nth-child(n + 5),
+.rating[data-total-value='2'] .rating__item:nth-child(n + 4),
+.rating[data-total-value='3'] .rating__item:nth-child(n + 3),
+.rating[data-total-value='4'] .rating__item:nth-child(n + 2),
+.rating[data-total-value='5'] .rating__item:nth-child(n + 1){
+color: orange;  
+}
+#id {
+border: 1px solid red;
+width: 40px;
+height: 20px;
+
+}
